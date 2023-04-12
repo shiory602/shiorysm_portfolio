@@ -34,15 +34,31 @@
       },
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
+
+    // トツキカナ
+    (function(d) {
+      var config = {
+        kitId: 'xnq2zqc',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+
     </script>
 
     <!-- DEVICON -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+
     <!-- CSS -->
   <link rel="stylesheet" href="./css/ress.css">
   <link rel="stylesheet" href="./css/style.css">
           
+  <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
 
 
@@ -75,71 +91,192 @@
           </ul>
         </div>
       </nav>
+      <!-- /nav -->
 
-      <div id="works">
-        <h1>作品紹介</h1>
-        <h2>-works-</h2>
-        <section>
-          <article>work1</article>
-          <article>work2</article>
-          <article>work3</article>
-        </section>
-      </div>
-    
-      <div id="skill">
-        <h1>スキル</h1>
-        <h2>-skill-</h2>
-        <section>
-          <article>work1</article>
-          <article>work2</article>
-          <article>work3</article>
-        </section>
-      </div>
-    
-      <div id="about">
-        <h1>わたしのこと</h1>
-        <h2>-about-</h2>
-        <section>
-          <article>work1</article>
-          <article>work2</article>
-          <article>work3</article>
-        </section>
-      </div>
-    
-      <div id="contact">
-        <h1>お問い合わせ</h1>
-        <h2>-contact-</h2>
-        <section>
-          <h3>お問い合わせはGmailかSNSでお願いします。</h3>
-          <h3>Please feel free to contact to me!</h3>
-          <div>
-            <a href="mailto:suzushioufo@gmail.com">
-              Gmail: suzushioufo@gmail.com
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="inner">
+
+          <h1 class="title">作品紹介</h1>
+          <h2 class="subtitle">-works-</h2>
+          <div class="works-list">
+            <a href="./works/works_weatherapp.html" class="works-item">
+              <p class="works-img"><img src="./sources/weather-app.png" alt=""></p>
+              <p class="works-name">Weather app</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a href="./works/works_portfolio1.html" class="works-item">
+              <p class="works-img"><img src="./sources/shiorisuzuki.png" alt=""></p>
+              <p class="works-name">First Portfolio</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a href="./works/works_portfolio2.html" class="works-item">
+              <p class="works-img"><img src="./sources/shiorisoma.png" alt=""></p>
+              <p class="works-name">Second Portfolio</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
             </a>
           </div>
-          <div>
-            <a href="./sources/shiorisoma-resume_20220430.docx.pdf" download>Resume</a>
+        </div>
+      </section>
+      <!-- /works -->
+      
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="inner">
+          <h1 class="title">スキル</h1>
+          <h2 class="subtitle">-skill-</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-photoshop-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">photoshop</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-illustrator-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">illustrator</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-html5-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-css3-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">CSS</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-bootstrap-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">Bootstrap</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-javascript-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">javascript</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-jquery-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">jQuery</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-sass-original"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">sass</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-react-original"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">React</h3>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img">
+                <i class="devicon-git-plain"></i>
+              </p>
+              <div class="skill-body">
+                <h3 class="skill-name">git</h3>
+              </div>
+            </div>
           </div>
-          <div>
-            <i class="devicon-github-original"></i>
-            <i class="devicon-twitter-original"></i>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="inner">
+          <h1 class="title">わたしのこと</h1>
+          <h2 class="subtitle">-about-</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="./img/icon_circle.png" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+                外国語大学卒業後、６年間金融機関にて接客・事務・企画業務を幅広く経験。
+                <br>
+                その後、バンクーバーの専門学校CICCCでプログラミングを学習。
+              </p>
+              <p>
+                【経験】
+                <br>
+                フロントエンドエンジニア（Junior Software Developer） - ロサンゼルスの日本企業Lraough LLC にて本企業の人材マッチングシステムの構築をする。React, Vercel, GitHub, MaterialUIを使用。
+              </p>
+              <p>
+                妊娠出産により帰国し、デザインスキルを身につけるためオンラインスクールSHElikesでWEBデザインをメインに学習。
+                現在は東アフリカにてフリーランスとして活動中。
+              </p>
+            </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="inner">
+          <h1 class="title">お問い合わせ</h1>
+          <h2 class="subtitle">-contact-</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">SNSまたはメールにてお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://twitter.com/shiorysm" target="_blank" rel="noopener"><i class="devicon-twitter-original"></i></a>
+            <a class="contact-item" href="https://www.instagram.com/shiorysm_design" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/shiory602" class="contact-item"><i class="devicon-github-original"></i></a>
+            <a class="contact-item" href="mailto:suzushioufo@gmail.com"><i class="bi bi-envelope"></i></a>
+            <a class="contact-item" href="./sources/shiorisoma-resume_20220430.docx.pdf" download><i class="bi bi-file-person-fill"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+      
+      <div class="page-top" id="js-page-top">
+        <i class="bi bi-caret-up-fill"></i>
+        <!-- <span class="material-icons-outlined">expand_less</span> -->
       </div>
 
     </main>
   </div>
 
-<!-- footer -->
-  <footer>
-    <div><a href="#">▲</a></div>
-    <div>
-      <h6>Copyright © 2023 Shiori Soma, All Rights Reserved.</h6>
-    </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copyright">Copyright&copy;2023 Shiori Soma, All Rights Reserved.</div>
   </footer>
   <!-- /footer -->
 
   <!-- ここまで画面に表示される -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="javasscript.js"></script>
 </body>
 
