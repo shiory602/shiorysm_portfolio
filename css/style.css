@@ -154,6 +154,17 @@ nav
 /*--------------------------------
  Works
 ---------------------------------*/
+
+.works-design {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 120px;
+}
+
+.works-design img {
+  width: 30%;
+}
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -588,9 +599,8 @@ nav
   }
 
   .works-item {
-    /* flex: 0 0 48%; */
     width: 70%;
-    margin: 0 auto;
+    margin: 40px auto;
     margin-bottom: 80px;
   }
 
