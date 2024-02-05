@@ -5,17 +5,17 @@ body {
   font-size: 14px;
   line-height: 1.8;
   letter-spacing: .8px;
-  color: #8C7B86;
+  color: #4C3D2A;
 }
 
 
 a {
   transition: opacity .3s;
   text-decoration: none;
-  color: #D9899E;
+  color: #EE827C;
 }
 a:hover {
-  color: #6e4751;
+  color: #605452;
 }
 
 img {
@@ -57,20 +57,23 @@ layout
 見出し
 ---------------------------------*/
 .title {
-  font-size: 28px;
+  font-size: 72px;
+  font-family: "scribo-brush-xl-regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1;
   margin-bottom: 10px;
   text-align: center;
   letter-spacing: .1em;
-  color: #8C7B86;
+  color: #4C3D2A;
 }
 .subtitle {
-  font-size: 24px;
+  font-size: 18px;
   line-height: .5;
   margin-bottom: 40px;
   text-align: center;
   letter-spacing: .1em;
-  color: #8C7B86;
+  color: #4C3D2A;
 }
 
 .lead {
@@ -152,7 +155,7 @@ nav
 
 
 /*--------------------------------
- Works
+Works
 ---------------------------------*/
 
 .works-design {
